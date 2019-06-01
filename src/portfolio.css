@@ -6,6 +6,10 @@ h1 {
 	width: 100vw;
 	height: 65px;
 	text-align: center;
+	display: flex;
+	margin: 0;
+	padding: 0;
+    flex-direction: column-reverse;
 }
 
 ul {
@@ -16,7 +20,7 @@ ul {
 
 nav > ul {
 	position: absolute;
-	top: 75px;
+	top: 120px;
 	left: 0;
 }
 
@@ -43,12 +47,13 @@ nav a:hover, nav a:focus, nav a[data-highlighted="true"] {
 }
 
 nav li {
-	padding: 2px 15px;
+	padding: 0 15px;
+	margin-bottom: 4px;
 }
 
 main {
 	position: relative;
-	top: 75px;
+	top: 120px;
 	grid-area: "main";
 }
 
@@ -56,17 +61,35 @@ main > ul > li {
 	padding-bottom: 45px;
 }
 
-main > ul > li ul {
+ul.group {
 	display: flex;
 	justify-content: space-around;
 }
 
-main > ul > li ul > li {
+ul.group li {
 	display: block;
 	width: 22vw;
 	height: 15.25vw;
 	background-size: cover;
 	background-position: top; 
+	position: relative;
+}
+
+li[data-highlighted="true"] ul.group li:first-child::before {
+	content: none;
+}
+
+li[data-highlighted="true"] ul.group li::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background: #000;
+	top: calc(15.25vw / 2);
+	left: -2.3vw;
+	transform: translate(-50%, -50%);
 }
 
 nav > button {
@@ -109,8 +132,13 @@ nav > button {
 		width: 100vw;
 	}
 
-	main > ul > li ul > li {
+	ul.group > li {
 		width: 30.3vw;
 		height: 21vw;
+	}
+
+
+	li[data-highlighted="true"] ul.group li::before {
+		content: none;
 	}
 }

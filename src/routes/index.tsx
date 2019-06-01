@@ -29,7 +29,7 @@ export const Index: React.FC = (props: any) => {
 			{abbreviatedGroups.map((group, groupIndex) => (
 				<li key={groupIndex} data-highlighted={group.id === state.highlightedGroupId} onMouseEnter={handleMouseEnter(group.id)} onMouseLeave={handleMouseLeave}>
 					<Link to={`/${group.id}`}>
-						<ul>
+						<ul className="group">
 							{group.images.map((image, imageIndex) => (
 								<li key={imageIndex} style={{ backgroundImage: `url(${image.url})` }} aria-label={image.name} />
 							))}

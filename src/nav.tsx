@@ -21,7 +21,7 @@ export const Nav: React.FC = () => {
 	return (
 		<nav data-expanded={expanded}>
 			<button type="button" onClick={handleExpandClick}>
-				circle
+				toggle navigation menu
 			</button>
 			<ul>
 				<li>
