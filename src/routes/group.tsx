@@ -8,7 +8,7 @@ export const Group: React.FC = (props: any) => {
 	console.log(props.match);
 
 	React.useEffect(() => {
-		const activeGroup = parseInt(props.match.params.groupId);
+		const activeGroup = props.match.params.groupId;
 		let search;
 		state.groups.forEach(group => {
 			if (group.id === activeGroup) {

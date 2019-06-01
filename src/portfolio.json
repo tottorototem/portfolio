@@ -1,52 +1,52 @@
 {
 	"groups": [
 		{
-			"id": 0,
+			"id": "group_1",
 			"name": "Group 1",
 			"images": [
 				{
-					"id": 0,
+					"id": "image_1",
 					"name": "Blah test thing",
 					"url": "test.jpeg"
 				},
 				{
-					"id": 1,
+					"id": "image_2",
 					"name": "Blah test thang",
 					"url": "test2.jpeg"
 				},
 				{
-					"id": 2,
+					"id": "image_3",
 					"name": "Blah test thung",
 					"url": "test4.jpeg"
 				},
 				{
-					"id": 3,
+					"id": "image_4",
 					"name": "Blah test thaaaang",
 					"url": "test6.jpeg"
 				}
 			]
 		},
 		{
-			"id": 1,
+			"id": "group_2",
 			"name": "Group 1 but actually",
 			"images": [
 				{
-					"id": 4,
+					"id": "image_5",
 					"name": "Blah test thing",
 					"url": "test.jpeg"
 				},
 				{
-					"id": 5,
+					"id": "image_6",
 					"name": "Blah test thang",
 					"url": "test2.jpeg"
 				},
 				{
-					"id": 6,
+					"id": "image_7",
 					"name": "Blah test thung",
 					"url": "test4.jpeg"
 				},
 				{
-					"id": 7,
+					"id": "image_8",
 					"name": "Blah test thaaaang",
 					"url": "test6.jpeg"
 				}

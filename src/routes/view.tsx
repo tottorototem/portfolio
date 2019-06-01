@@ -6,7 +6,7 @@ export const View: React.FC = (props: any) => {
 	const [image, setImage] = React.useState<IImage>();
 
 	React.useEffect(() => {
-		const activeImage = parseInt(props.match.params.imageId);
+		const activeImage = props.match.params.imageId;
 		let search;
 
 		state.groups.forEach(group => {

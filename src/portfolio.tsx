@@ -9,19 +9,20 @@ import { View } from './routes/view';
 import portfolio from './portfolio.json';
 
 export interface IImage {
-  id: number;
+  id: string;
   name: string;
   url: string;
 }
 
 export interface IGroup {
-  id: number;
+  id: string;
   name: string;
   images: IImage[];
 }
 
 export interface IPortfolioState {
   groups: IGroup[];
+  highlightedGroupId?: string;
 }
 
 export interface IPortfolioContext {
@@ -36,27 +37,36 @@ export const Portfolio: React.FC = () => {
 
   const dispatch = React.useCallback((type: string, payload?: any) => {
     switch (type) {
-      case 'RESET': {
+      case 'HIGHLIGHT_GROUP': {
+        setPortfolioState({
+          groups: portfolioState.groups,
+          highlightedGroupId: payload
+        });
+        break;
+      }
+      case 'UNHIGHLIGHT_GROUP': {
         setPortfolioState({
           groups: portfolioState.groups
         });
         break;
       }
     }
+    console.log(type, payload);
   }, [portfolioState, setPortfolioState]);
 
   return (
-    <Router>
-      <section>
-        <Nav />
-        <PortfolioContext.Provider value={{ state: portfolioState, dispatch }}>
+    <PortfolioContext.Provider value={{ state: portfolioState, dispatch }}>
+      <Router>
+        <section>
+          <h1>Olha Danylchenko</h1>
+          <Nav />
           <main>
             <Route path="/" exact component={Index} />
             <Route path="/:groupId" component={Group} />
             <Route path="/:groupId/:imageId" component={View} />
           </main>
-        </PortfolioContext.Provider>
-      </section>
-    </Router>
+        </section>
+      </Router>
+    </PortfolioContext.Provider>
   );
 }

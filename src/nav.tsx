@@ -3,14 +3,33 @@ import { Link } from "react-router-dom";
 import { PortfolioContext } from './portfolio';
 
 export const Nav: React.FC = () => {
-	const { state } = React.useContext(PortfolioContext);
+	const { state, dispatch } = React.useContext(PortfolioContext);
+	const [expanded, setExpanded] = React.useState(false);
+
+	const handleExpandClick = () => {
+		setExpanded(!expanded);
+	};
+
+	const handleMouseEnter = (groupId: string) => () => {
+		dispatch('HIGHLIGHT_GROUP', groupId);
+	};
+
+	const handleMouseLeave = () => {
+		dispatch('UNHIGHLIGHT_GROUP');
+	};
 
 	return (
-		<nav>
+		<nav data-expanded={expanded}>
+			<button type="button" onClick={handleExpandClick}>
+				circle
+			</button>
 			<ul>
+				<li>
+					<Link to="/" onClick={handleExpandClick} tabIndex={0}>Home</Link>
+				</li>
 				{state.groups.map((group, index) => (
-					<li key={index}>
-						<Link to={`/${group.id}`}>{group.name}</Link>
+					<li key={index} onMouseEnter={handleMouseEnter(group.id)} onMouseLeave={handleMouseLeave}>
+						<Link data-highlighted={group.id === state.highlightedGroupId} to={`/${group.id}`} onClick={handleExpandClick} tabIndex={0}>{group.name}</Link>
 					</li>
 				))}
 			</ul>
