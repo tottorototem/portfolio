@@ -62,7 +62,7 @@ export const Portfolio: React.FC = () => {
           <Nav />
           <main>
             <Route path="/" exact component={Index} />
-            <Route path="/:groupId" component={Group} />
+            <Route path="/:groupId" exact component={Group} />
             <Route path="/:groupId/:imageId" component={View} />
           </main>
         </section>

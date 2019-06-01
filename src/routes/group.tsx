@@ -20,11 +20,13 @@ export const Group: React.FC = (props: any) => {
 
 	if (group) {
 		return (
-			<ul>
+			<ul className="group-page">
 				{group.images.map((image, index) => (
-					<Link key={index} to={`/${group.id}/${image.id}`}>
-						<li key={index} style={{ backgroundImage: `url(${image.url})` }} aria-label={image.name} />
-					</Link>
+					<a key={index} href={image.url}>
+						<li key={index}>
+							<img src={image.url} alt={image.name} />
+						</li>
+					</a>
 				))}
 			</ul>
 		)
