@@ -1,28 +1,38 @@
 {
 	"groups": [
 		{
-			"id": "group_1",
-			"name": "Group 1",
+			"id": "frei",
+			"name": "Frei",
 			"images": [
 				{
-					"id": "image_1",
+					"id": "frei1",
 					"name": "Bus",
 					"url": "/images/FREI_Монтажна%20область%201.png"
 				},
 				{
-					"id": "image_2",
+					"id": "frei2",
+					"name": "Bus",
+					"url": "/images/000027.JPG"
+				},
+				{
+					"id": "frei3",
 					"name": "Blah test thang",
-					"url": "/images/FREI_Монтажна%20область%201.png"
+					"url": "/images/000032.JPG"
 				},
 				{
-					"id": "image_3",
+					"id": "frei4",
 					"name": "Blah test thung",
-					"url": "/images/FREI_Монтажна%20область%201.png"
+					"url": "/images/000033.JPG"
 				},
 				{
-					"id": "image_4",
+					"id": "frei5",
 					"name": "Blah test thaaaang",
-					"url": "/images/FREI_Монтажна%20область%201.png"
+					"url": "/images/000036.JPG"
+				},
+				{
+					"id": "frei6",
+					"name": "Blah test thaaaang",
+					"url": "/images/000040.JPG"
 				}
 			]
 		},
