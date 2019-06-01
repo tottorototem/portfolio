@@ -1,0 +1,56 @@
+{
+	"groups": [
+		{
+			"id": "group_1",
+			"name": "Group 1",
+			"images": [
+				{
+					"id": "image_1",
+					"name": "Bus",
+					"url": "/images/FREI_Монтажна%20область%201.png"
+				},
+				{
+					"id": "image_2",
+					"name": "Blah test thang",
+					"url": "/images/FREI_Монтажна%20область%201.png"
+				},
+				{
+					"id": "image_3",
+					"name": "Blah test thung",
+					"url": "/images/FREI_Монтажна%20область%201.png"
+				},
+				{
+					"id": "image_4",
+					"name": "Blah test thaaaang",
+					"url": "/images/FREI_Монтажна%20область%201.png"
+				}
+			]
+		},
+		{
+			"id": "group_2",
+			"name": "Group 1 but actually",
+			"images": [
+				{
+					"id": "image_5",
+					"name": "Blah test thing",
+					"url": "/images/FREI_Монтажна%20область%201.png"
+				},
+				{
+					"id": "image_6",
+					"name": "Blah test thang",
+					"url": "/images/FREI_Монтажна%20область%201.png"
+				},
+				{
+					"id": "image_7",
+					"name": "Blah test thung",
+					"url": "/images/FREI_Монтажна%20область%201.png"
+				},
+				{
+					"id": "image_8",
+					"name": "Blah test thaaaang",
+					"url": "/images/FREI_Монтажна%20область%201.png"
+				}
+			]
+		}
+	]
+}

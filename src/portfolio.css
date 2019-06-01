@@ -1,0 +1,116 @@
+
+h1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 65px;
+	text-align: center;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav > ul {
+	position: absolute;
+	top: 75px;
+	left: 0;
+}
+
+section {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "nav main";
+}
+
+nav {
+	grid-area: nav;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 13pt;
+}
+
+nav a:hover, nav a:focus, nav a[data-highlighted="true"] {
+    color: #fff;
+    background: #000;
+}
+
+nav li {
+	padding: 2px 15px;
+}
+
+main {
+	position: relative;
+	top: 75px;
+	grid-area: "main";
+}
+
+main > ul > li {
+	padding-bottom: 45px;
+}
+
+main > ul > li ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+main > ul > li ul > li {
+	display: block;
+	width: 22vw;
+	height: 15.25vw;
+	background-size: cover;
+	background-position: top; 
+}
+
+nav > button {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	display: block;
+	width: 50px;
+	height: 50px;
+	border: none;
+	color: rgba(0,0,0,0);
+	background: #000;
+	border-radius: 25px;
+}
+
+@media screen and (max-width: 756px) {
+	h1 {
+		left: 65px;
+		width: calc(100vw - 65px);
+	}
+
+	nav ul {
+		position: absolute;
+		overflow-y: scroll;
+		display: block;
+		width: 100vw;
+		height: calc(100vh - 35px);
+		top: 75px;
+		left: -100vw;
+		transition: left 0.5s linear;
+		background: #fff;
+		z-index: 1;
+	}
+
+	nav[data-expanded="true"] ul {
+		left: 0;
+	}
+
+	main {
+		width: 100vw;
+	}
+
+	main > ul > li ul > li {
+		width: 30.3vw;
+		height: 21vw;
+	}
+}
