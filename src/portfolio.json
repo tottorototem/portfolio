@@ -1,64 +1,115 @@
 {
 	"groups": [
+		
+		{
+			"id": "mountain",
+			"name": "Mountain",
+			"images": [
+				{
+					"id": "mountain_5",
+					"name": "Blah test thing",
+					"url": "/images/mountain101.jpg"
+				},
+				{
+					"id": "mountain_6",
+					"name": "Blah test thang",
+					"url": "/images/mountain.jpg"
+				},
+				{
+					"id": "mountain_7",
+					"name": "Blah test thung",
+					"url": "/images/mountain2.jpg"
+				},
+				{
+					"id": "mountain_8",
+					"name": "Blah test thaaaang",
+					"url": "/images/mountain3-1.jpg"
+				} ,
+				{
+					"id": "mountain_9",
+					"name": "Blah test thaaaang",
+					"url": "/images/mountain4-2.jpg"
+				} 
+			]
+		},
 		{
 			"id": "frei",
 			"name": "Frei",
 			"images": [
 				{
 					"id": "frei1",
-					"name": "Bus",
-					"url": "/portfolio/images/FREI_Монтажна%20область%201.png"
+					"name": "Frei",
+					"url": "/images/FREI.png"
 				},
-				{
-					"id": "frei2",
-					"name": "Bus",
-					"url": "/portfolio/images/000027.JPG"
-				},
+				
 				{
 					"id": "frei3",
-					"name": "Blah test thang",
-					"url": "/portfolio/images/000032.JPG"
+					"name": "smoking",
+					"url": "/images/smoking.jpg"
 				},
 				{
 					"id": "frei4",
 					"name": "Blah test thung",
-					"url": "/portfolio/images/000033.JPG"
+					"url": "/images/bus.jpg"
 				},
 				{
 					"id": "frei5",
 					"name": "Blah test thaaaang",
-					"url": "/portfolio/images/000036.JPG"
+					"url": "/images/000036.JPG"
 				},
 				{
 					"id": "frei6",
 					"name": "Blah test thaaaang",
-					"url": "/portfolio/images/000040.JPG"
+					"url": "/images/000040.JPG"
 				}
 			]
 		},
 		{
-			"id": "group_2",
-			"name": "Group 1 but actually",
+			"id": "cinema4d",
+			"name": "Cinema4d",
 			"images": [
 				{
-					"id": "image_5",
-					"name": "Blah test thing",
-					"url": "/portfolio/images/FREI_Монтажна%20область%201.png"
+					"id": "cinema1",
+					"name": "Hand",
+					"url": "/images/hand1.jpg"
 				},
 				{
-					"id": "image_6",
-					"name": "Blah test thang",
-					"url": "/portfolio/images/FREI_Монтажна%20область%201.png"
+					"id": "cinema2",
+					"name": "Hand2",
+					"url": "/images/hand2.jpg"
 				},
 				{
-					"id": "image_7",
-					"name": "Blah test thung",
-					"url": "/portfolio/images/FREI_Монтажна%20область%201.png"
+					"id": "cinema3",
+					"name": "Hand3",
+					"url": "/images/handObj1-5.jpg"
+				}
+			]
+
+		},
+		{
+			"id": "businesscard",
+			"name": "Business Card",
+			"images": [
+				{
+					"id": "card1",
+					"name": "Hand",
+					"url": "/images/business-card-spencer-rudnick.png"
+				}
+			]
+		},
+		{
+			"id": "posters",
+			"name": "Posters",
+			"images": [
+				{
+					"id": "poster1",
+					"name": "Travel",
+					"url": "/images/travel-1.jpg"
 				},
 				{
-					"id": "image_8",
-					"name": "Blah test thaaaang",
-					"url": "/portfolio/images/FREI_Монтажна%20область%201.png"
+					"id": "poster2",
+					"name": "Salut",
+					"url": "/images/salut.jpg"
 				}
 			]
 		}
