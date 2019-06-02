@@ -32,7 +32,7 @@ export const Index: React.FC = (props: any) => {
 					<Link to={`/${group.id}`}>
 						<ul className="group">
 							{group.images.map((image, imageIndex) => (
-								<li key={imageIndex} style={{ backgroundImage: `url(${image.url})` }} />
+								<li key={imageIndex} style={{ backgroundImage: `url(${baseUrl()}${image.url})` }} />
 							))}
 						</ul>
 					</Link>
