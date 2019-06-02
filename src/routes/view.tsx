@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { PortfolioContext, IImage, IGroup } from '../portfolio';
 import { Link } from 'react-router-dom';
+import { baseUrl } from '..';
 
 export const View: React.FC = (props: any) => {
 	const { state } = React.useContext(PortfolioContext);
@@ -36,7 +37,7 @@ export const View: React.FC = (props: any) => {
 	return image ? (
 		<>
 			<Link to={`/${group ? group.id : ''}`} />
-			<img className="view" src={image.url} alt={image.id} />
+			<img className="view" src={`${baseUrl()}${image.url}`} alt={image.id} />
 		</>
 	) : null;
 }
