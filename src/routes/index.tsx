@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 import { PortfolioContext } from '../portfolio';
+import { baseUrl } from '..';
 
 export const Index: React.FC = (props: any) => {
 	const { state, dispatch } = React.useContext(PortfolioContext);
@@ -31,7 +32,7 @@ export const Index: React.FC = (props: any) => {
 					<Link to={`/${group.id}`}>
 						<ul className="group">
 							{group.images.map((image, imageIndex) => (
-								<li key={imageIndex} style={{ backgroundImage: `url(${image.url})` }} aria-label={image.name} />
+								<li key={imageIndex} style={{ backgroundImage: `url(${image.url})` }} aria-label={`${baseUrl}${image.name}`} />
 							))}
 						</ul>
 					</Link>

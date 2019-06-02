@@ -20,5 +20,5 @@ export const View: React.FC = (props: any) => {
 		setImage(search);
 	}, [props.match.params.imageId, state.groups]);
 
-	return image ? <img src={image.url} alt={image.name} /> : null;
+	return image ? <img className="view" src={image.url} alt={image.name} /> : null;
 }

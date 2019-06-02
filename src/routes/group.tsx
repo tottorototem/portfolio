@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { PortfolioContext, IGroup } from '../portfolio';
 import { Link } from 'react-router-dom';
+import { baseUrl } from '..';
 
 export const Group: React.FC = (props: any) => {
 	const { state } = React.useContext(PortfolioContext);
@@ -22,9 +23,9 @@ export const Group: React.FC = (props: any) => {
 		return (
 			<ul className="group-page">
 				{group.images.map((image, index) => (
-					<a key={index} href={image.url}>
+					<a key={index} href={`${baseUrl}${image.url}`}>
 						<li key={index}>
-							<img src={image.url} alt={image.name} />
+							<img src={`${baseUrl}${image.url}`} alt={image.name} />
 						</li>
 					</a>
 				))}
