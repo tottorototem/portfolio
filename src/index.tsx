@@ -5,4 +5,4 @@ import { Portfolio } from './portfolio';
 
 ReactDOM.render(<Portfolio />, document.getElementById('portfolio'));
 
-export function baseUrl() { return '' /*'/portfolio'*/; }
+export function baseUrl() { return /*''*/ '/portfolio'; }
