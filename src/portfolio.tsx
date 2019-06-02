@@ -10,7 +10,6 @@ import portfolio from './portfolio.json';
 
 export interface IImage {
   id: string;
-  name: string;
   url: string;
 }
 

@@ -6,7 +6,6 @@ import { baseUrl } from '..';
 export const Group: React.FC = (props: any) => {
 	const { state } = React.useContext(PortfolioContext);
 	const [group, setGroup] = React.useState<IGroup>();
-	console.log(props.match);
 
 	React.useEffect(() => {
 		const activeGroup = props.match.params.groupId;
@@ -23,11 +22,11 @@ export const Group: React.FC = (props: any) => {
 		return (
 			<ul className="group-page">
 				{group.images.map((image, index) => (
-					<a key={index} href={`${baseUrl}${image.url}`}>
+					<Link key={index} to={`/${group.id}/${image.id}`}>
 						<li key={index}>
-							<img src={`${baseUrl}${image.url}`} alt={image.name} />
+							<img src={`${baseUrl()}${image.url}`} alt={image.id} />
 						</li>
-					</a>
+					</Link>
 				))}
 			</ul>
 		)

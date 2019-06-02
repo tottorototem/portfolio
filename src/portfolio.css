@@ -19,8 +19,8 @@ ul {
 	list-style-type: none;
 }
 
-nav > ul {
-	position: absolute;
+nav ul {
+	position: fixed;
 	top: 140px;
 	left: 0;
 }
@@ -117,6 +117,10 @@ nav > button {
 	border-radius: 25px;
 }
 
+img.view {
+	max-width: 100%;
+}
+
 @media screen and (max-width: 756px) {
 
 	h1 {
@@ -142,8 +146,8 @@ nav > button {
 	}
 
 	ul.group > li {
-		width: 30.3vw;
 		height: 21vw;
+		width: 100%;
 	}
 
 	ul.group-page img {
